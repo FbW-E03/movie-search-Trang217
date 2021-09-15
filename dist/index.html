@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Searching</title>
+  <link rel="stylesheet" href="/app.c328ef1a.css"></head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary mb-3">
+      <div class="container">
+        <a href="#" class="navbar-brand"> Movie Searching App</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <form action="submit">
+        <div class="card card-body d-flex flex-column align-items-start">
+          <h1>Search Movies</h1>
+          <p class="lead">Enter a name of movie to fetch movies from API</p>
+          <input type="text" id="searchMovie" class="form-control" placeholder="Movie name ...">
+          <button type="submit" class="btn btn-primary mt-3">Search</button>
+        </div>
+      </form>
+      <br>
+
+      <div id="movie"></div>
+    </div>
+
+    <footer class="mt-5 p-3 text-center bg-light">
+      Movie Searching App &copy; by Trang
+    </footer>
+    <script src="/app.c328ef1a.js"></script>
+  </body>
+</html>

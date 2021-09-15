@@ -1,0 +1,26 @@
+{
+  "name": "movie-search-trang217",
+  "version": "1.0.0",
+  "description": "In this project we will build Movie Search App using Fetch this is an example about this project deployed with netlify  [movie-search-app](https://compassionate-stonebraker-36a5b5.netlify.app/) - to sign up for the api key : [omdbapi](https://www.omdbapi.com/apikey.aspx) - to read about omdb api : [omdbapi](http://www.omdbapi.com/) - this is the link to fetch :  ```javascript http://www.omdbapi.com/?apikey=[yourkey]& ``` - There are three options to make request:",
+  "main": "app.js",
+  "scripts": {
+    "parcel": "parcel index.html",
+    "build": "parcel build app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FbW-E03/movie-search-Trang217.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FbW-E03/movie-search-Trang217/issues"
+  },
+  "homepage": "https://github.com/FbW-E03/movie-search-Trang217#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^5.1.1",
+    "parcel-bundler": "^1.12.5"
+  }
+}

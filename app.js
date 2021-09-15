@@ -1,3 +1,6 @@
+import "babel-polyfill";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 const movieInput = document.querySelector("input");
 const form = document.querySelector("form");
 const movieContainer = document.querySelector("#movie");
