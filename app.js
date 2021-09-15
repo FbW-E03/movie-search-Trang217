@@ -6,10 +6,6 @@ const form = document.querySelector("form");
 const movieContainer = document.querySelector("#movie");
 const container = document.querySelector(".container");
 
-// fetch("http://www.omdbapi.com/?i=tt3896198&apikey=43dc7138")
-//   .then((response) => response.json())
-//   .then((data) => console.log(data));
-
 // UI
 
 function renderMovie(movie) {
@@ -76,7 +72,7 @@ function renderAlert(message, className) {
 const searchMovieID = async (id) => {
   // getting single movie using movie id (i =)
   const response = await fetch(
-    `http://www.omdbapi.com/?i=${id}&apikey=43dc7138`
+    `https://www.omdbapi.com/?i=${id}&apikey=43dc7138`
   );
   const data = await response.json();
 
@@ -89,7 +85,7 @@ const searchMovieID = async (id) => {
 
 // getting a list of movie according to the search word as example (s = batman)
 function searchMovieStr(str) {
-  fetch(`http://www.omdbapi.com/?s=${str}&apikey=43dc7138`)
+  fetch(`https://www.omdbapi.com/?s=${str}&apikey=43dc7138`)
     .then((response) => response.json())
     .then((data) => {
       if (!data.Search)

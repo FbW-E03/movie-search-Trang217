@@ -8207,10 +8207,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 var movieInput = document.querySelector("input");
 var form = document.querySelector("form");
 var movieContainer = document.querySelector("#movie");
-var container = document.querySelector(".container"); // fetch("http://www.omdbapi.com/?i=tt3896198&apikey=43dc7138")
-//   .then((response) => response.json())
-//   .then((data) => console.log(data));
-// UI
+var container = document.querySelector(".container"); // UI
 
 function renderMovie(movie) {
   var movieDiv = document.createElement("div");
@@ -8238,7 +8235,7 @@ var searchMovieID = /*#__PURE__*/function () {
         switch (_context.prev = _context.next) {
           case 0:
             _context.next = 2;
-            return fetch("http://www.omdbapi.com/?i=".concat(id, "&apikey=43dc7138"));
+            return fetch("https://www.omdbapi.com/?i=".concat(id, "&apikey=43dc7138"));
 
           case 2:
             response = _context.sent;
@@ -8266,7 +8263,7 @@ var searchMovieID = /*#__PURE__*/function () {
 
 
 function searchMovieStr(str) {
-  fetch("http://www.omdbapi.com/?s=".concat(str, "&apikey=43dc7138")).then(function (response) {
+  fetch("https://www.omdbapi.com/?s=".concat(str, "&apikey=43dc7138")).then(function (response) {
     return response.json();
   }).then(function (data) {
     if (!data.Search) renderAlert("Please insert correct name", "text-center alert alert-danger");
@@ -8312,7 +8309,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45691" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44127" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
